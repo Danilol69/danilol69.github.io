@@ -30,7 +30,7 @@ body {
   p{
     font-size: 18px;
     line-height: 1.5;
-    margin: 0 200px 150px;
+    margin-bottom: 150px;
   }
   .social-icon{
     display: flex;
@@ -155,7 +155,6 @@ body {
     color: #ffffff;
     font-size: 21px;
     text-align: left;
-    white-space: nowrap;
   }
   .box li{
     color: #a4a4a4;
@@ -182,6 +181,12 @@ body {
   /* Code for mobile */
   @media screen and (max-width: 600px)
   {
+    .box {
+      width: 100%;
+      padding: 20px;
+      margin: 20px;
+      font-size: 16px;
+  }
     .container {
       margin-left: 20px;
       margin-right: 20px;
