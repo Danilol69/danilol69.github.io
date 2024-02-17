@@ -261,6 +261,9 @@ svg {
   }
   /* Code for mobile devices, such as smartphones or tablets */
   @media only screen and (max-width: 1024px) and (pointer: coarse), (hover: none) {
+    .headerbuttons{
+      margin: 0;
+    }
     hr{
       max-width: 100%;
       width: 550px;
