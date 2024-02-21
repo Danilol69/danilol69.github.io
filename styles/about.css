@@ -1,4 +1,5 @@
 html, body {
+  scroll-behavior: smooth;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -89,6 +90,12 @@ svg {
     margin-top:130px;
     color: rgb(224, 92, 21);
     text-shadow: 0 0 3px #232121, 0 0 5px #353538;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    max-width: 700px;
   }
   
   a {
