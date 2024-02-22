@@ -41,15 +41,6 @@ svg {
   display: block;
   transition: fill 0.2s;
 }
-
-#github-logo:hover,
-#github-logo:focus {
-  fill:white;
-}
-#spotify-logo:hover,
-#spotify-logo:focus {
-  fill: white;
-}
 .social-icon a {
   margin-left: auto;
 }
@@ -137,7 +128,7 @@ svg {
     transition: border 0.5s;
   }
   #gamesimg:hover{
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid white;
   }
   p{
     font-size: 18px;
@@ -200,6 +191,10 @@ svg {
   }
   .box li{
     color: #a4a4a4;
+  }
+  hr{
+    max-width: 100%;
+    width: 550px;
   }
 
   /* Code for mobile */
@@ -289,10 +284,6 @@ svg {
   @media only screen and (max-width: 1024px) and (pointer: coarse), (hover: none) {
     .headerbuttons{
       margin: 0;
-    }
-    hr{
-      max-width: 100%;
-      width: 550px;
     }
     .copyright {
       margin-top: 50px;

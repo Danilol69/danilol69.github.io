@@ -29,8 +29,8 @@ body {
   border-bottom: 0.1px solid grey;
 }
 .social-icons{
-    display: flex;
-    font-size: 32px;
+  display: flex;
+  font-size: 32px;
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -52,7 +52,6 @@ svg {
     font-size: 20px;
     height: 100%;
 }
-  
   nav {
     margin: auto;
   }
@@ -86,18 +85,12 @@ svg {
     font-family: "Krub", sans-serif;
     font-weight: 600;
     font-style: normal;
+    text-align: center;
     font-size: 60px;
     margin-top:130px;
     color: rgb(224, 92, 21);
     text-shadow: 0 0 3px #232121, 0 0 5px #353538;
   }
-  p{
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 50px;
-    max-width: 700px;
-  }
-  
   a {
     color: rgb(255, 255, 255);
   }
@@ -121,7 +114,15 @@ svg {
   
   img {
     height: 50px;
-    margin-right: 20px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    max-width: 700px;
+  }
+  summary{
+    cursor: pointer;
   }
   .copyright {
     font-size: 20px;
@@ -133,17 +134,17 @@ svg {
     margin: 0;
     padding: 5px;
   }
-  .headerbutton {
-    position: relative;
-    display: inline-block;
-    color: #c9c9c9;
-    text-decoration: none;
-  }
   .headerbuttons{
     display: flex;
     flex-direction: row;
     list-style: none;
     margin-left: 100px;
+  }
+  .headerbutton {
+    position: relative;
+    display: inline-block;
+    color: #c8c8c8;
+    text-decoration: none;
   }
   .headerbutton::before {
     content: "";
@@ -163,13 +164,6 @@ svg {
   .headerbutton:hover{
     color: white;
   }
-  #inspired-text{
-    font-size: 20px;
-  }
-  hr{
-    max-width: 100%;
-    width: 1000px;
-  }
   .box{
     background-color: rgb(54, 62, 66);
     width: 500px;
@@ -183,6 +177,11 @@ svg {
   .box li{
     color: #a4a4a4;
   }
+  hr{
+    max-width: 100%;
+    width: 550px;
+  }
+
   /* Code for mobile */
   @media screen and (max-width: 600px)
   {
@@ -270,10 +269,6 @@ svg {
   @media only screen and (max-width: 1024px) and (pointer: coarse), (hover: none) {
     .headerbuttons{
       margin: 0;
-    }
-    hr{
-      max-width: 100%;
-      width: 550px;
     }
     .copyright {
       margin-top: 50px;

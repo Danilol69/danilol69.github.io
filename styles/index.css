@@ -34,6 +34,9 @@ body {
     margin-bottom: 50px;
     max-width: 700px;
   }
+  summary{
+    cursor: pointer;
+  }
   .social-icons{
     list-style: none;
     display: flex;
@@ -126,7 +129,6 @@ body {
   
   img {
     height: 50px;
-    margin-right: 20px;
   }
   .copyright {
     font-size: 20px;
@@ -183,6 +185,10 @@ body {
   }
   .headerbutton:hover{
     color: white;
+  }
+  hr{
+    max-width: 100%;
+    width: 550px;
   }
 
   /* Code for mobile */
@@ -270,10 +276,6 @@ body {
   }
   /* Code for mobile devices, such as smartphones or tablets */
   @media only screen and (max-width: 1024px) and (pointer: coarse), (hover: none) {
-    hr{
-      max-width: 100%;
-      width: 550px;
-    }
     .headerbuttons{
       margin: 0;
     }
