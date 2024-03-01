@@ -28,9 +28,13 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 0.1px solid grey;
 }
+.social-icon{
+  width: 38.5px;
+  height: auto;
+}
 .social-icons{
+  list-style: none;
   display: flex;
-  font-size: 32px;
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -40,9 +44,6 @@ svg {
   fill: #aaa;
   display: block;
   transition: fill 0.2s;
-}
-.social-icon a {
-  margin-left: auto;
 }
 .site-nav{
     display: flex;
@@ -194,7 +195,8 @@ svg {
       flex-direction: column;
     }
     .social-icon {
-      font-size: 40px;
+      width: 40px;
+      height: auto;
     }
     .headerbutton{
       font-size: 20px;

@@ -37,10 +37,13 @@ body {
   summary{
     cursor: pointer;
   }
+  .social-icon{
+    width: 38.5px;
+    height: auto;
+  }
   .social-icons{
     list-style: none;
     display: flex;
-    font-size: 32px;
   }
   .social-icon:hover,
   .social-icon:focus {
@@ -203,7 +206,8 @@ body {
       flex-direction: column;
     }
     .social-icon {
-      font-size: 40px;
+      width: 40px;
+      height: auto;
     }
     .headerbutton{
       font-size: 20px;
