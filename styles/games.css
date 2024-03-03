@@ -121,11 +121,12 @@ svg {
     height: 50px;
   }
   #gamesimg{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border: 1px solid rgb(105, 105, 105);
     border-radius: 20px;
     margin-top: 20px;
-    height: 150px;
-    max-width: 100%;
     transition: border 0.5s;
   }
   #gamesimg:hover{
@@ -197,7 +198,6 @@ svg {
     max-width: 100%;
     width: 550px;
   }
-
   /* Code for mobile */
   @media screen and (max-width: 600px)
   {

@@ -1,0 +1,281 @@
+html, body {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: start;
+    background-color: #1d2225;
+    background-image: linear-gradient(to bottom right, #141d20, #2e2f2f);
+  }
+  :root {
+    color-scheme: dark;
+  }
+  .site-header {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 0 20px;
+    z-index: 999;
+    transition: 0.5s;
+    background-color: #1d2225;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 0.1px solid grey;
+  }
+  .social-icon{
+    width: 38.5px;
+    height: auto;
+  }
+  .social-icons{
+    list-style: none;
+    display: flex;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+      fill:white;
+    }
+  svg {
+    fill: #aaa;
+    display: block;
+    transition: fill 0.2s;
+  }
+  .site-nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #f3f3f3;
+      font-size: 20px;
+      height: 100%;
+  }
+    nav {
+      margin: auto;
+    }
+    
+    nav a {
+      display: inline-block;
+      margin-right: 25px;
+      text-decoration: none;
+      color: #f3f3f3;
+      font-size: larger;
+    }
+    
+    nav a:hover {
+      color: #c1bec9;
+      transition: 0.1s;
+    }
+    
+    .container {
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      color: rgb(252, 252, 252);
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .headline {
+      font-family: "Krub", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      text-align: center;
+      font-size: 60px;
+      margin-top:130px;
+      color: rgb(224, 92, 21);
+      text-shadow: 0 0 3px #232121, 0 0 5px #353538;
+    }
+    a {
+      color: rgb(255, 255, 255);
+    }
+    
+    ::-moz-selection { /* Code for Firefox */
+      color: rgb(255, 255, 255);
+      background: rgb(223, 20, 20);
+    }
+    
+    ::selection {
+      color: rgb(255, 255, 255);
+      background: rgb(223, 20, 20);
+    }
+    
+    div.container {
+      color: white;
+      font-family: "Krub", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    img {
+      height: 50px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 50px;
+      max-width: 700px;
+    }
+    summary{
+      cursor: pointer;
+    }
+    .copyright {
+      font-size: 20px;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: white;
+      position:fixed;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 5px;
+    }
+    .headerbuttons{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin-left: 100px;
+    }
+    .headerbutton {
+      position: relative;
+      display: inline-block;
+      color: #c8c8c8;
+      text-decoration: none;
+    }
+    .headerbutton::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #ff8800;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .headerbutton:hover::before {
+      transform: scaleX(1);
+    }
+    .headerbutton:hover{
+      color: white;
+    }
+    .box{
+      background-color: rgb(54, 62, 66);
+      width: 500px;
+      padding: 80px;
+      margin: 90px;
+      border-radius: 15px;
+      color: #ffffff;
+      font-size: 21px;
+      text-align: left;
+    }
+    .box li{
+      color: #a4a4a4;
+    }
+    hr{
+      max-width: 100%;
+      width: 550px;
+    }
+  
+    /* Code for mobile */
+    @media screen and (max-width: 600px)
+    {
+      .site-header {
+        display: block;
+        text-align: left;
+        height: auto;
+      }
+      .site-nav{
+        flex-direction: column;
+      }
+      .social-icon {
+        width: 40px;
+        height: auto;
+      }
+      .headerbutton{
+        font-size: 20px;
+      }
+      .logo {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-right: auto;
+      }
+      .box {
+        width: 100%;
+        padding: 20px;
+        margin: 20px;
+        font-size: 16px;
+    }
+      .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        line-height: 50px;
+      }
+      .headline {
+        font-size: 40px;
+        margin-top: 270px;
+      }
+      nav a {
+        font-size: 15px;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 999;
+        transition: 0.5s;
+        background-color: #1d2225;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-bottom: 0.1px solid white;
+      }
+      .container {
+        font-size: 18px;
+        text-align: center;
+      }
+      .copyright{
+        margin-top: 150px;
+        position:static;
+        font-size: 20px;
+        text-align: center;
+      }
+      .headerbutton{
+        white-space: nowrap;
+        padding: 5px;
+        display: flex;
+        margin-right: auto;
+      }
+      .headerbuttons{
+        flex-direction: column;
+      }
+      .social-icons{
+        margin-bottom: 10px;
+        margin-top: 30px;
+        margin-right: auto;
+        justify-content: center;
+      }
+    }
+    /* Code for mobile devices, such as smartphones or tablets */
+    @media only screen and (max-width: 1024px) and (pointer: coarse), (hover: none) {
+      .headerbuttons{
+        margin: 0;
+      }
+      .copyright {
+        margin-top: 50px;
+        position: static;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
