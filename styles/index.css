@@ -143,17 +143,15 @@ body {
     margin: 0;
     padding: 5px;
   }
+  .header-container{
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .headerbutton {
     position: relative;
-    display: inline-block;
-    color: #c9c9c9;
-    text-decoration: none; 
-  }
-  .headerbuttons{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-left: 100px;
+    color: #c8c8c8;
   }
   .box{
     background-color: rgb(54, 62, 66);
@@ -195,7 +193,7 @@ body {
   }
 
   /* Code for mobile */
-  @media screen and (max-width: 600px)
+  @media screen and (max-width: 800px)
   {
     .site-header {
       display: block;
@@ -214,7 +212,7 @@ body {
     }
     .logo {
       margin-top: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       margin-right: auto;
     }
     .box {
@@ -262,14 +260,16 @@ body {
       font-size: 20px;
       text-align: center;
     }
+    .header-container{
+      margin-left: 0;
+      flex-direction: column;
+      margin-right: auto;
+    }
     .headerbutton{
-      white-space: nowrap;
+      font-size: 20px;
       padding: 5px;
       display: flex;
       margin-right: auto;
-    }
-    .headerbuttons{
-      flex-direction: column;
     }
     .social-icons{
       margin-bottom: 10px;

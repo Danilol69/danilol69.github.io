@@ -120,7 +120,7 @@ svg {
   img {
     height: 50px;
   }
-  #gamesimg{
+  .gamesimg{
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -129,7 +129,7 @@ svg {
     margin-top: 20px;
     transition: border 0.5s;
   }
-  #gamesimg:hover{
+  .gamesimg:hover{
     border: 1.5px solid white;
   }
   p{
@@ -151,17 +151,15 @@ svg {
     margin: 0;
     padding: 5px;
   }
-  .headerbuttons{
+  .header-container{
+    margin-left: 140px;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
   }
   .headerbutton {
     position: relative;
-    display: inline-block;
     color: #c8c8c8;
-    text-decoration: none;
   }
   .headerbutton::before {
     content: "";
@@ -199,7 +197,7 @@ svg {
     width: 550px;
   }
   /* Code for mobile */
-  @media screen and (max-width: 600px)
+  @media screen and (max-width: 800px)
   {
     .site-header {
       display: block;
@@ -213,12 +211,9 @@ svg {
       width: 40px;
       height: auto;
     }
-    .headerbutton{
-      font-size: 20px;
-    }
     .logo {
       margin-top: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       margin-right: auto;
     }
     .box {
@@ -266,14 +261,16 @@ svg {
       font-size: 20px;
       text-align: center;
     }
+    .header-container{
+      margin-left: 0;
+      flex-direction: column;
+      margin-right: auto;
+    }
     .headerbutton{
-      white-space: nowrap;
+      font-size: 20px;
       padding: 5px;
       display: flex;
       margin-right: auto;
-    }
-    .headerbuttons{
-      flex-direction: column;
     }
     .social-icons{
       margin-bottom: 10px;
