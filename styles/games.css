@@ -212,6 +212,9 @@ svg {
     max-width: 100%;
     width: 550px;
   }
+  #backtotop{
+    margin: 50px;
+  }
   /* Code for mobile */
   @media screen and (max-width: 800px)
   {

@@ -1,3 +1,5 @@
+// Note: If you disable javascript in your browser, the header will not have an image
+
 document.addEventListener("DOMContentLoaded", function() {
   var header = document.querySelector('.site-header');
   var images = [
