@@ -15,6 +15,10 @@ body {
   color-scheme: dark;
 }
 .site-header {
+  position: relative;
+  background-image: url(/img/about/background.webp);
+  background-size: cover;
+  background-position: center;
   align-items: center;
   position: absolute;
   top: 0;
@@ -27,6 +31,19 @@ body {
   background-color: #1d2225;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 0.1px solid grey;
+}
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%);
+  z-index: -1;
 }
 .social-icon{
   width: 38.5px;
@@ -235,10 +252,6 @@ svg {
       background-color: #1d2225;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       border-bottom: 0.1px solid white;
-    }
-    .container {
-      font-size: 18px;
-      text-align: center;
     }
     .copyright{
       margin-top: 150px;

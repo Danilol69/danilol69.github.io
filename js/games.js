@@ -1,4 +1,4 @@
-// Note: If you disable javascript in your browser, the header will not have an image
+// this file is only used to display different images on the games page
 
 document.addEventListener("DOMContentLoaded", function() {
   var header = document.querySelector('.site-header');
